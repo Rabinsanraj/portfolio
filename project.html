@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="projectcss.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="bgimg">
+            <nav>
+                <ul>
+                    <li><a class="click" type="button" id="home">Home</a></li>
+                    <li><a class="click" type="button" id="skill">Skills</a></li>
+                    <li><a class="click" type="button" id="contact">Contact</a></li>
+                    <li><a class="return" type="button" id="return">Return</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div class="proj1">
+            <div class="inproj1">
+                <h1>WOOD INDUSTRY</h1>
+                <p>About : </p>
+                <p>This Website shows famous woods in India.</p>
+                <p>5 separate pages, using HTML,CSS . <a href="https://github.com/Rabinsanraj/5pages"
+                        style="color:  #ffffff ;">Github</a></p>
+            </div>
+        </div>
+
+        <div class="proj2">
+            <div class="inproj2">
+                <h1>CREAMY CLOUDS</h1>
+                <p>About : </p>
+                <p>This webpage manage Ice Cream porlor activites</p>
+                <p>Increasing and Decreasing order counts</p>
+                <p>This is a single page using HTML,CSS,JAVASCRIPT . <a
+                        href="https://github.com/Rabinsanraj/Creamy-Clouds" style="color:  #ffffff ;">Github</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('home').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = "home.html";
+        });
+        document.getElementById('skill').addEventListener('click',function(event){
+            event.preventDefault();
+            window.location.href="skills.html";
+        });
+
+        document.getElementById('contact').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = "contact.html";
+        });
+
+        document.getElementById('return').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+
+</html>

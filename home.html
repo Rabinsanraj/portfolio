@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="homecss.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="bgimg">
+            <nav>
+                <ul>
+                    <li><a class="click" type="button" id="skill">Skills</a></li>
+                    <li><a class="click" type="button" id="project">Project</a></li>
+                    <li><a class="click" type="button" id="contact">Contact</a></li>
+                    <li><a class="return" type="button" id="return">Return</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container" id="myself">
+        <h1 id="mys">MY SELF</h1>
+        <h2 id="name">RABINSAN RAJ</h2>
+    </div>
+    <div class="para">
+        <p>I completed my formal B.Com(G) degree in 2021</p>
+        <P>At JP COLLEGE OF ARTS AND SCIENCE, TENKASI</P>
+        <p>Full Stack Development</p>
+        <p>Certified by LOGIN 360</p>
+    </div>
+
+    <script>
+         document.getElementById('skill').addEventListener('click',function(event){
+            event.preventDefault();
+            window.location.href="skills.html";
+        });
+         document.getElementById('project').addEventListener('click',function(event){
+            event.preventDefault();
+            window.location.href="project.html";
+        });
+        document.getElementById('contact').addEventListener('click',function(event){
+            event.preventDefault();
+            window.location.href="contact.html";
+        });
+        
+       document.getElementById('return').addEventListener('click',function(event){
+            event.preventDefault();
+            window.location.href="index.html";
+        });
+    </script>
+</body>
+</html>

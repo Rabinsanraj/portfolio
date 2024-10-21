@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="skillscss.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="bgimg">
+            <nav>
+                <ul>
+                    <li><a class="click" type="button" id="home">Home</a></li>
+                    <li><a class="click" type="button" id="project">Project</a></li>
+                    <li><a class="click" type="button" id="contact">Contact</a></li>
+                    <li><a class="return" type="button" id="return">Return</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div class="persentbar">
+            <h3>JAVA</h3>
+            <div class="bar-bar1"></div>
+        </div>
+        <div class="persentbar">
+            <h3>HTML</h3>
+            <div class="bar-bar2"></div>
+        </div>
+        <div class="persentbar">
+            <h3>CSS</h3>
+            <div class="bar-bar3"></div>
+        </div>
+        <div class="persentbar">
+            <h3>JAVASCRIPT</h3>
+            <div class="bar-bar4"></div>
+        </div>
+        
+    </div>
+    <script>
+         document.getElementById('home').addEventListener('click',function(event){
+            event.preventDefault();
+            window.location.href="home.html";
+        });
+         document.getElementById('project').addEventListener('click',function(event){
+            event.preventDefault();
+            window.location.href="project.html";
+        });
+        document.getElementById('contact').addEventListener('click',function(event){
+            event.preventDefault();
+            window.location.href="contact.html";
+        });
+        
+       document.getElementById('return').addEventListener('click',function(event){
+            event.preventDefault();
+            window.location.href="index.html";
+        });
+    </script>
+
+</body>
+</html>

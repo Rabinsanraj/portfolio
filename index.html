@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portflio</title>
+    <link rel="stylesheet" href="indexcss.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="bgimg">
+            <nav>
+                <label class="logoname" id="logo">FULL STACK DEVELOPER</label>
+                <ul>
+                    <li><a class="click" type="button" id="home">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="para">
+        <P> A versatile full stack developer skilled in designing, developing
+            and deploying dynamic web applications.</P>
+        <p>Proficient in front-end technologies like HTML, CSS,
+            JAVASCRIPT and back-end frameworks such as Spring,MySQL.</p>
+        <p>Adept at working with databases and APIs to create scalable solutions.</p>
+
+    </div>
+    <script>
+        document.getElementById('home').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = "home.html";
+        });
+    </script>
+</body>
+
+</html>

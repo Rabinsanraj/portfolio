@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contactcss.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="bgimg">
+            <nav>
+                <ul>
+                    <li><a class="click" type="button" id="home">Home</a></li>
+                    <li><a class="click" type="button" id="skill">Skills</a></li>
+                    <li><a class="click" type="button" id="project">Project</a></li>
+                    <li><a class="return" type="button" id="return">Return</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <h1 class="head">CONTACT</h1>
+    <div class="container">
+        <div class="cont-box">
+            <h3>Email : <span>robinsanraj207@gmail.com</span></h3>
+            <h3>Contact : <span>+91 7868067207</span></h3>
+            <h3>LinkedIn : <span><a href="https://in.linkedin.com/in/rabinsan-raj-a-4b06a824a"
+                        style="color: white;">LinkedIn</a></span></h3>
+            <h3>Instagram : </h3>
+            <h3></h3>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('home').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = "home.html";
+        });
+        document.getElementById('skill').addEventListener('click',function(event){
+            event.preventDefault();
+            window.location.href="skills.html";
+        });
+        document.getElementById('project').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = "project.html";
+        });
+    
+        document.getElementById('return').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+
+</html>
